@@ -1,0 +1,17 @@
+Smart Watch Caption - A watch to go with every attire
+
+Headphones Caption - The headphone that will make you tap on every beat
+
+Earbuds Caption - Earbuds in. Volume up. Ignore the world.
+
+SmartWatchColor1 - #293835
+SmartWatchColor2 - black
+SmartWatchColor - #f3eae2
+
+EarbudsColor1 -#16325e
+EarbudsColor2 - black
+EarbudsColor3 - white
+
+HeadphonesColor1 - #65d245
+HeadphonesColor2 -#cd4251
+HeadphonesColor3 - #f28e0c

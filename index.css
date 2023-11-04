@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Rajdhani:wght@300&family=Raleway:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#main-container {
+    position: relative;
+    min-width: 100%;
+    height: 100vh;
+}
+#main-container img{
+    min-width: 100%;
+    height: 100vh;
+    position: absolute;
+    transform: translate(0vw);
+    transition: all 0.7s ease-in-out;
+    top: 0;
+    left: 0;
+}
+
+#main-container img:first-child{
+    z-index: 1;
+}
+#main-container img:nth-child(2){
+    z-index: 0;
+}
+#main-container img:last-child{
+    z-index: -1;
+}
+
+#main-container h1{
+    position: absolute;
+    top: 5vw;
+    left: 2vw;
+    color: #FFFAFA;
+    font-family: 'Raleway', sans-serif;
+    font-size: 5vw;
+    width: 35vw;
+    z-index: 100;
+    text-align: left;
+    transition: all 0.7s ease-in-out;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    height: 4vw;
+    border-bottom: 1px solid;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+}
+
+nav h3{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.9vw;
+    color: white;
+    font-weight: 800;
+}
+
+#category-section {
+    min-width: 100%;
+    height: 16vw;
+}
+
+#category-section h1{
+    font-size: 6.5vw;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+#category-section h1 h1{
+    background-color: purple;
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-size: 6.5vw;
+}
+
+/* -- */
+.selected-main-product-container{
+    margin: 4vw 0vw 0vw 0vw;
+}
+
+#main-product-container{
+    max-width: 100%;
+    height: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-product-container1{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#main-product-container1 img{
+    width: 30vw;
+    height: 30vw;
+    margin: 0px 0px 20px 2px;
+    mix-blend-mode: darken;
+}
+
+#main-product-container1 span {
+    display: flex;
+    width: 75%;
+    height: 5vw;
+    justify-content: space-evenly;
+}
+
+#main-product-container1 span div{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.24s ease-in-out;
+    transform: scale(1);
+}
+
+#main-product-container1 span div:hover{
+    transform: scale(1.1);
+}
+
+#main-product-container2{
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgba(29, 29, 29, 0.034);
+    color: black;
+    padding: 8vw 0.5vw 8vw 3.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#main-product-container2 h1{
+    font-size: 2.3vw;
+}
+
+#main-product-container2 p{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+#main-product-container2 p span{
+    font-size: 1.3vw;
+    background-color: rgb(156, 0, 156);
+    border-radius: 2px;
+    text-align: center;
+    width: 4vw;
+    padding: 0.3vw 0vw 0vw 0vw;
+    height: 2vw;
+    margin: 0vw 0vw 1vw 0vw;
+    display: block;
+    color: white;
+    font-weight: 900;
+}
+#main-product-container2 p span i{
+    font-size: 1.3vw;
+    color: gold;
+}
+
+#main-product-container2 h2{
+    font-size: 2.5vw;
+}
+
+#main-product-container2 h2 span:not(:last-child){
+    text-decoration: line-through;
+    margin: 0vw 0vw 0vw 1vw;
+    font-size: 1.6vw;
+    font-weight: 300;
+}
+
+#main-product-container2 h2 span:not(:first-child){
+    font-size: 1.6vw;
+    background-color: rgb(156, 0, 156);
+    text-align: center;
+    border-radius: 2px;
+    padding: 0.3vw 0vw 0vw 0vw;
+    width: 8vw;
+    height: 2.5vw;
+    color: white;
+    display: block;
+    margin: 1vw 0vw 0vw 0vw;
+}
+/* -- */
+
+#smartColor1{
+    background-color: #293835;
+}
+#smartColor2{
+    background-color: black;
+}
+#smartColor3{
+    background-color: #f3eae2;
+}
+#earbudsColor1{
+    background-color: #16325e;
+}
+#earbudsColor2{
+    background-color: black;
+}
+#earbudsColor3{
+    background-color: whitesmoke;
+}
+#headphonesColor1{
+    background-color: #65d245;
+}
+#headphonesColor2{
+    background-color: #fc1f1f;
+}
+#headphonesColor3{
+    background-color: #f78c00;
+}
+
+/* -- */
+
+/* Scroller Card Section */
+#card-container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 5vw;
+    grid-template-columns: auto auto auto;
+}
+
+#card-item{
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#card-item img{
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+    width: 25vw;
+    height: 25vw;  
+}
+
+#card-item img:hover{
+    opacity: 1;
+}
+
+#card-item h3{
+    font-size: 2vw;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+}
+
+#card-view-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    justify-self:flex-start;
+    align-self: center;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+#card-view-more i{
+    transition: all 0.3s ease-in-out;
+    font-size: 5vw;
+    color: black;
+    text-align: center;
+}
+
+
+#card-view-more p{
+    color: black;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3vw;
+}
+/* -- */
+
+#signupApproval{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 4vw;
+    text-align: center;
+}
+
+/* Form */
+form{
+    width: 35%;
+    height: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(156, 0, 156);
+    border-radius: 5%;
+    margin: auto;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+form input{
+    width:30vw;
+    text-decoration: none;
+    font-size: 1.6vw;
+    letter-spacing: 0.1vw;
+    text-align: center;
+    height: 4vw;
+    border: 0.05vw solid purple;
+}
+
+form button{
+    width: 15vw;
+    height: 3vw;
+    font-size: 1.2vw;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+    border: 0px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+}
+
+form button:hover{
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+}
+
+/* Footer Section */
+
+#footer-container{
+    width: 100%;
+    height: 12vw;
+    background-color: rgba(0, 0, 0, 0.959);
+}
+
+#footer-subContainer1{
+    width: 50%;
+    height: 7vw;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer-subContainer1 a{
+    overflow: hidden;
+}
+
+#footer-subContainer1 a i{
+    padding: 2vw;
+    font-size: 2vw;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(0deg);
+    /* transform: scale(1); */
+    color: white;
+
+}
+
+#footer-subContainer1 a i:hover{
+    color: rgb(156, 0, 156);
+    /* transform: scale(2); */
+    transform: rotate(30deg);
+
+}
+
+#footer-subContainer2{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer-subContainer2 h2{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: white;
+    transition:all 0.3s ease-in-out;
+    font-family: 'Rajdhani', sans-serif;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+
+#footer-last-heading{
+    color: white;
+    text-align: center;
+    font-size: 1.6vw;
+    margin-top: 2vw;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#footer-subContainer2 h2:hover{
+
+    color: rgb(156, 0, 156);
+}
+/* -- */
+@media screen and (max-width : 884px) {
+    *{
+        font-size: 2.5vw;
+    }
+
+    #main-container img{
+        left: -60vw;
+    }
+
+    #main-container h1{
+        font-size: 12vw;
+        width: 100%;
+    }
+
+    #category-section h1 mark{
+        font-size: 7vw;
+    }
+
+    #main-product-container2 p{
+        font-size: 2vw;
+    } 
+}
